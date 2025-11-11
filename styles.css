@@ -381,8 +381,8 @@ body {
 
 /* ========== RESPONSIVE DESIGN ========== */
 
-/* Tablet dan HP (lebar max 1024px) */
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 1080px) {
   .about__container {
     flex-direction: column;
     text-align: center;
