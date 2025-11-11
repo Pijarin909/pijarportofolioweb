@@ -7,6 +7,7 @@ menu.addEventListener('click', function() {
   menuLinks.classList.toggle('active');
 });
 
+
 // Animasi ikon hamburger jadi X
 menu.addEventListener('click', () => {
   menu.classList.toggle('open');
