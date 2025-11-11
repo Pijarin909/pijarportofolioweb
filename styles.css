@@ -378,3 +378,92 @@ body {
   color: #ddd;
   font-size: 1rem;
 }
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablet dan HP (lebar max 1024px) */
+@media screen and (max-width: 1024px) {
+  .about__container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about__img {
+    width: 200px;
+    margin-bottom: 1.5rem;
+  }
+
+  .skills__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-detail img {
+    max-width: 100%;
+  }
+}
+
+/* HP (lebar max 768px) */
+@media screen and (max-width: 768px) {
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #131313;
+    position: absolute;
+    top: 80px;
+    left: 0;
+  }
+
+  .navbar__menu.active {
+    display: flex;
+  }
+
+  .navbar__toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar__links {
+    padding: 1.5rem;
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+
+  .hero__content h1 {
+    font-size: 2rem;
+  }
+
+  .hero__content p {
+    font-size: 1rem;
+  }
+
+  .portfolio__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills__box {
+    width: 90%;
+  }
+
+  .contact__form {
+    width: 100%;
+  }
+}
+
+/* HP kecil (max 480px) */
+@media screen and (max-width: 480px) {
+  .hero__content h1 {
+    font-size: 1.6rem;
+  }
+
+  .button {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+
+  .about__text p {
+    font-size: 0.9rem;
+  }
+}
